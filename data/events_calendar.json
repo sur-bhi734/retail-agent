@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Diwali",
+    "days_away": 18,
+    "relevant_categories": [
+      "Ethnic Wear",
+      "Accessories",
+      "Footwear"
+    ]
+  },
+  {
+    "name": "College Fest",
+    "days_away": 6,
+    "relevant_categories": [
+      "Streetwear",
+      "Tops",
+      "Footwear"
+    ]
+  },
+  {
+    "name": "End of Season Sale",
+    "days_away": 3,
+    "relevant_categories": [
+      "Tops",
+      "Bottoms",
+      "Footwear"
+    ]
+  },
+  {
+    "name": "Freshers Party",
+    "days_away": 12,
+    "relevant_categories": [
+      "Formal",
+      "Accessories"
+    ]
+  },
+  {
+    "name": "Republic Day",
+    "days_away": 25,
+    "relevant_categories": [
+      "Ethnic Wear",
+      "Tops"
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+product_id,name,category,color,style,price,budget_tier,brand,size
+P001,Puma White Top,Tops,White,Ethnic,1191,Mid,Puma,XL
+P002,W Blue Top,Tops,Blue,Streetwear,1134,Mid,W,S
+P003,Biba Navy Top,Tops,Navy,Streetwear,744,Mid,Biba,M
+P004,Puma White Top,Tops,White,Casual,3377,High,Puma,S
+P005,W White Top,Tops,White,Ethnic,771,Mid,W,M
+P006,Campus Maroon Top,Tops,Maroon,Casual,4915,High,Campus,XL
+P007,Roadster Navy Top,Tops,Navy,Streetwear,352,Low,Roadster,XS
+P008,HRX Olive Top,Tops,Olive,Streetwear,659,Mid,HRX,M
+P009,Van Heusen White Top,Tops,White,Formal,457,Low,Van Heusen,M
+P010,Campus Maroon Top,Tops,Maroon,Ethnic,221,Low,Campus,L
+P011,Roadster Black Bottom,Bottoms,Black,Casual,3251,High,Roadster,S
+P012,Biba Blue Bottom,Bottoms,Blue,Ethnic,536,Mid,Biba,S
+P013,Campus Beige Bottom,Bottoms,Beige,Ethnic,220,Low,Campus,S
+P014,HRX Mustard Bottom,Bottoms,Mustard,Ethnic,4695,High,HRX,S
+P015,Van Heusen Navy Bottom,Bottoms,Navy,Streetwear,289,Low,Van Heusen,L
+P016,Van Heusen White Bottom,Bottoms,White,Formal,2152,High,Van Heusen,XS
+P017,Van Heusen Beige Bottom,Bottoms,Beige,Streetwear,727,Mid,Van Heusen,S
+P018,W Mustard Bottom,Bottoms,Mustard,Streetwear,313,Low,W,XS
+P019,Roadster Mustard Bottom,Bottoms,Mustard,Streetwear,4127,High,Roadster,XS
+P020,Puma Black Bottom,Bottoms,Black,Casual,682,Mid,Puma,L
+P021,Biba Mustard Footwear,Footwear,Mustard,Casual,1246,Mid,Biba,XL
+P022,Puma Mustard Footwear,Footwear,Mustard,Casual,1681,High,Puma,XL
+P023,Campus Beige Footwear,Footwear,Beige,Streetwear,299,Low,Campus,XS
+P024,Biba Mustard Footwear,Footwear,Mustard,Streetwear,2766,High,Biba,M
+P025,Puma Mustard Footwear,Footwear,Mustard,Ethnic,630,Mid,Puma,XL
+P026,HRX Maroon Footwear,Footwear,Maroon,Streetwear,353,Low,HRX,L
+P027,Biba Pastel Footwear,Footwear,Pastel,Formal,1121,Mid,Biba,S
+P028,W Navy Footwear,Footwear,Navy,Casual,4751,High,W,XL
+P029,Van Heusen Maroon Footwear,Footwear,Maroon,Ethnic,370,Low,Van Heusen,S
+P030,Biba Pastel Footwear,Footwear,Pastel,Casual,274,Low,Biba,L
+P031,Biba Mustard Ethnic Wear,Ethnic Wear,Mustard,Formal,4442,High,Biba,S
+P032,HRX White Ethnic Wear,Ethnic Wear,White,Formal,274,Low,HRX,S
+P033,Biba Olive Ethnic Wear,Ethnic Wear,Olive,Casual,1705,High,Biba,S
+P034,Puma Beige Ethnic Wear,Ethnic Wear,Beige,Formal,3675,High,Puma,XL
+P035,Biba Navy Ethnic Wear,Ethnic Wear,Navy,Formal,1350,Mid,Biba,M
+P036,Campus Blue Ethnic Wear,Ethnic Wear,Blue,Formal,1360,Mid,Campus,S
+P037,W Maroon Ethnic Wear,Ethnic Wear,Maroon,Ethnic,1817,High,W,M
+P038,HRX Navy Ethnic Wear,Ethnic Wear,Navy,Ethnic,362,Low,HRX,L
+P039,W Mustard Ethnic Wear,Ethnic Wear,Mustard,Formal,277,Low,W,XL
+P040,Van Heusen Mustard Ethnic Wear,Ethnic Wear,Mustard,Formal,437,Low,Van Heusen,XL
+P041,Roadster Mustard Accessorie,Accessories,Mustard,Formal,4635,High,Roadster,M
+P042,Biba Blue Accessorie,Accessories,Blue,Ethnic,1271,Mid,Biba,S
+P043,Campus Mustard Accessorie,Accessories,Mustard,Streetwear,338,Low,Campus,L
+P044,Biba Blue Accessorie,Accessories,Blue,Casual,283,Low,Biba,XL
+P045,Van Heusen Mustard Accessorie,Accessories,Mustard,Ethnic,487,Low,Van Heusen,L
+P046,Biba Beige Accessorie,Accessories,Beige,Ethnic,551,Mid,Biba,M
+P047,Van Heusen Mustard Accessorie,Accessories,Mustard,Streetwear,1279,Mid,Van Heusen,XS
+P048,HRX Black Accessorie,Accessories,Black,Streetwear,4568,High,HRX,XS
+P049,Puma Olive Accessorie,Accessories,Olive,Casual,219,Low,Puma,S
+P050,Biba White Accessorie,Accessories,White,Ethnic,3439,High,Biba,M

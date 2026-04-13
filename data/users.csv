@@ -1,0 +1,26 @@
+user_id,name,age,area,school,budget,style_pref,gender,social_influence,purchase_frequency,preferred_brands,size,color_pref,occasion
+U001,Aayush Gopal,19,Koramangala,Whitefield College,Low,Ethnic,Male,Low,Weekly,Campus,XL,White,Party
+U002,Theodore Dara,29,Koramangala,Koramangala College,Low,Ethnic,Male,Low,Rarely,Roadster,XL,Pastel,Party
+U003,Zashil Rau,29,Indiranagar,Jayanagar College,High,Streetwear,Male,High,Rarely,Biba,M,Blue,Festive
+U004,Ekavir Ghosh,22,Whitefield,Koramangala College,Low,Formal,Male,Medium,Monthly,Puma,M,Black,Work
+U005,Utkarsh Sarin,33,Koramangala,Jayanagar College,Low,Streetwear,Female,Low,Weekly,Campus,XS,Black,Festive
+U006,Warda Ghose,25,Koramangala,Indiranagar College,Low,Formal,Female,Medium,Rarely,Van Heusen,M,Navy,Casual Outing
+U007,Jatin Mahajan,27,Indiranagar,Whitefield College,High,Casual,Male,Low,Rarely,HRX,S,Mustard,Work
+U008,Lohit Sethi,24,HSR Layout,Indiranagar College,High,Streetwear,Male,High,Weekly,Van Heusen,M,Maroon,Casual Outing
+U009,Gavin Badal,18,Indiranagar,HSR Layout College,High,Streetwear,Male,Low,Monthly,Biba,L,Navy,Casual Outing
+U010,Zashil Krishnan,20,Indiranagar,HSR Layout College,High,Streetwear,Female,Low,Monthly,W,S,Navy,Party
+U011,Teerth Grewal,31,Koramangala,Koramangala College,Low,Ethnic,Male,Low,Monthly,Puma,XS,Maroon,Work
+U012,Maya Oak,35,Jayanagar,HSR Layout College,Mid,Casual,Male,Low,Rarely,Van Heusen,M,Olive,College
+U013,Tara Chand,25,Jayanagar,Indiranagar College,Mid,Casual,Female,Low,Weekly,Puma,XS,Blue,Party
+U014,Chakradev Dhaliwal,35,Indiranagar,Indiranagar College,Mid,Ethnic,Male,Low,Monthly,Biba,XS,White,Casual Outing
+U015,Widisha Aurora,25,Indiranagar,Koramangala College,Low,Casual,Male,Low,Monthly,Van Heusen,XS,Navy,Festive
+U016,Ladli Bhat,31,HSR Layout,Indiranagar College,Mid,Formal,Male,Low,Rarely,Campus,S,Blue,Work
+U017,Ucchal Sura,27,Jayanagar,HSR Layout College,Mid,Casual,Male,High,Weekly,W,XS,Pastel,Party
+U018,Onveer Yadav,23,Koramangala,Koramangala College,High,Casual,Male,High,Weekly,Van Heusen,M,White,Party
+U019,Madhav Nadkarni,23,Whitefield,Jayanagar College,Low,Ethnic,Female,High,Monthly,Van Heusen,L,Pastel,College
+U020,Anjali Srivastava,19,Jayanagar,Whitefield College,Mid,Formal,Female,Low,Weekly,Campus,XS,Black,Work
+U021,Upma Grover,26,Koramangala,Indiranagar College,Low,Ethnic,Female,High,Monthly,HRX,M,Mustard,Festive
+U022,Aachal Gill,18,Jayanagar,HSR Layout College,Low,Casual,Male,High,Weekly,HRX,L,Mustard,Work
+U023,Arjun Sastry,22,Jayanagar,Koramangala College,Low,Formal,Male,Medium,Monthly,Van Heusen,L,Blue,Work
+U024,Ethan Raja,33,Jayanagar,Indiranagar College,Low,Streetwear,Male,High,Rarely,Campus,XL,Black,Casual Outing
+U025,Kamya Parekh,17,Koramangala,HSR Layout College,Mid,Ethnic,Male,Low,Weekly,Van Heusen,S,White,Party
