@@ -5,7 +5,7 @@ import ollama
 # ✅ FIXED IMPORTS
 from tools.trends import get_local_trends
 from tools.social import get_peer_purchases
-from tools.events import get_upcoming_events, get_event_categories
+from tools.events import get_upcoming_events, get_event_categories, get_relevant_events
 from tools.catalog import (
     search_products,
     search_products_for_events,
@@ -29,7 +29,8 @@ def run_agent(profile: dict) -> dict:
     # ── 1. Gather all context ──────────────────────────────────────────────
     trends = get_local_trends(profile["area"], school=profile.get("school"))
     peer_data = get_peer_purchases(profile["user_id"])
-    events = get_upcoming_events()
+    events = get_relevant_events(profile, within_days=20, top_n=3)
+    print(f"[DEBUG] Selected events for {profile['name']}: {[e['name'] for e in events]}")
     event_cats = get_event_categories(events)
     already_bought, bought_categories = get_already_purchased(profile["user_id"])
 
@@ -81,7 +82,7 @@ def run_agent(profile: dict) -> dict:
 
     # ── 5. LLM call ────────────────────────────────────────────────────────
     response = ollama.chat(
-        model="mistral",
+        model="gemma:2b",
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": prompt},
