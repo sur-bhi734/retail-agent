@@ -16,7 +16,7 @@ sizes      = ["XS", "S", "M", "L", "XL"]
 occasions  = ["College", "Festive", "Casual Outing", "Work", "Party"]
 color_prefs = ["Black", "White", "Navy", "Pastel", "Blue", "Olive", "Maroon", "Mustard"]
 
-# --- Users (now with color_pref + occasion) ---
+
 users = []
 for i in range(1, 26):
     users.append({
@@ -38,7 +38,7 @@ for i in range(1, 26):
 
 pd.DataFrame(users).to_csv("data/users.csv", index=False)
 
-# --- Products ---
+
 products = []
 pid = 1
 for cat in categories:
@@ -68,7 +68,7 @@ for cat in categories:
 
 pd.DataFrame(products).to_csv("data/products.csv", index=False)
 
-# --- Sales Trends ---
+
 product_names = [p["name"] for p in products]
 trends = []
 for area in areas:
@@ -84,7 +84,7 @@ for area in areas:
 
 pd.DataFrame(trends).to_csv("data/sales_trends.csv", index=False)
 
-# --- Social Connections ---
+
 user_ids = [u["user_id"] for u in users]
 social = {}
 for u in user_ids:
@@ -94,7 +94,7 @@ for u in user_ids:
 with open("data/social_connections.json", "w") as f:
     json.dump(social, f, indent=2)
 
-# --- Events Calendar ---
+
 events = [
     {"name": "Diwali",              "days_away": 18, "relevant_categories": ["Ethnic Wear", "Accessories", "Footwear"]},
     {"name": "College Fest",        "days_away": 6,  "relevant_categories": ["Streetwear", "Tops", "Footwear"]},
@@ -106,7 +106,7 @@ events = [
 with open("data/events_calendar.json", "w") as f:
     json.dump(events, f, indent=2)
 
-# --- Purchase History (with category for sequence analysis) ---
+
 purchase_history = []
 for u in users:
     past = random.sample(products, k=random.randint(3, 6))

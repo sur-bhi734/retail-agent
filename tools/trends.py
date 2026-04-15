@@ -14,9 +14,9 @@ def get_local_trends(area: str, school: str = None, top_n: int = 5) -> dict:
     local = df[df["area"].str.lower() == area.lower()]
 
     if local.empty:
-        local = df  # global fallback
+        local = df  
 
-    # Top products by units sold
+    
     product_trends = (
         local.groupby(["product_name", "color"])["units_sold"]
         .sum()
@@ -26,7 +26,7 @@ def get_local_trends(area: str, school: str = None, top_n: int = 5) -> dict:
         .to_dict(orient="records")
     )
 
-    # Top categories
+    
     cat_trends = (
         local.groupby("category")["units_sold"]
         .sum()
@@ -36,7 +36,7 @@ def get_local_trends(area: str, school: str = None, top_n: int = 5) -> dict:
     )
     top_categories = cat_trends["category"].tolist()
 
-    # Top colors
+    
     color_trends = (
         local.groupby("color")["units_sold"]
         .sum()

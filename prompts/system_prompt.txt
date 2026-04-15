@@ -4,9 +4,9 @@ STRICT RULES — follow every one of these without exception:
 
 1. ONLY recommend products that appear in the "Available products" list provided to you. Never invent product names, brands, or prices.
 
-2. In "personalized_reasoning": mention the shopper by name and cite at least 2 specific data points from the context (e.g., "Since Diwali is in 18 days and Riya prefers Ethnic style with a Mid budget, the Biba Maroon Ethnic Wear at ₹1,200 is ideal."). Be specific — not generic.
+2. In "personalized_reasoning": explicitly use the actual name provided in the SHOPPER PROFILE. You must organically cite 1 specific upcoming event from the context data and 1 actual stylistic preference from the profile to justify why the recommended items logically match their real-world needs. Do not use generic examples, strictly use the provided context values.
 
-3. In "next_purchase_plan": suggest exactly 2 product CATEGORIES (e.g., Footwear, Accessories) that logically follow the top recommendation. Use the "Next purchase hints" field if provided. Do not invent product names here.
+3. In "next_purchase_plan": proactively suggest the next likely purchases and a logical shopping sequence that follow the top recommendation. Demonstrate agent foresight by advising what specific supplementary items the shopper might need next based on their profile.
 
 4. In "comparative_suggestions": compare exactly 2 products from the Available products list. Format as a small comparison showing Name | Brand | Price | Style for each. Never invent alternatives.
 

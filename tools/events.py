@@ -24,24 +24,30 @@ def get_relevant_events(profile: dict, within_days: int = 20, top_n: int = 3) ->
     with open("data/events_calendar.json") as f:
         events = json.load(f)
 
-    # Filter by time window
+    
     upcoming = [e for e in events if e["days_away"] <= within_days]
 
     if not upcoming:
         return []
 
-    # Build user preferences set for matching
-    user_prefs = {
-        profile.get("style_pref", ""),
-        profile.get("occasion", "")
-    }
+    
+    user_prefs_str = " ".join([
+        str(profile.get("style_pref", "")),
+        str(profile.get("occasion", "")),
+        str(profile.get("preferred_brands", "")),
+        str(profile.get("color_pref", ""))
+    ]).lower()
     
     for e in upcoming:
-        cats = set(e.get("relevant_categories", []))
-        e["_relevance"] = len(cats.intersection(user_prefs))
         
-    # Sort by relevance (descending) and proximity (ascending)
-    upcoming.sort(key=lambda x: (-x.get("_relevance", 0), x["days_away"]))
+        e["_relevance"] = sum(
+            1 for cat in e.get("relevant_categories", [])
+            if cat.lower() in user_prefs_str or user_prefs_str.find(cat.lower().split()[0]) != -1
+        )
+        
+
+    user_hash = hash(profile.get("user_id", "default")) % 100
+    upcoming.sort(key=lambda x: (-x.get("_relevance", 0), x["days_away"] + (user_hash % (x["days_away"] + 1))))
     
     return upcoming[:top_n]
 

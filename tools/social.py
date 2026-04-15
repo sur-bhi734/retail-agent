@@ -7,7 +7,7 @@ def _load_connections() -> dict:
         return json.load(f)
 
 
-def get_peer_purchases(user_id: str, top_n: int = 5) -> dict:
+def get_peer_purchases(user_id: str, top_n: int = 5, profile: dict = None) -> dict:
     """
     Returns a dict with:
       - peer_products: top product names bought by friends
@@ -15,17 +15,22 @@ def get_peer_purchases(user_id: str, top_n: int = 5) -> dict:
       - peer_styles: style distribution among friends
       - friend_count: number of connected peers
     """
-    if user_id == "CUSTOM":
-        return {
-            "peer_products":    [],
-            "peer_categories":  [],
-            "peer_styles":      [],
-            "friend_count":     0,
-            "note": "No peer data for custom profile — area trends applied instead.",
-        }
-
-    connections  = _load_connections()
-    friend_ids   = connections.get(user_id, [])
+    friend_ids = []
+    if user_id == "CUSTOM" and profile is not None:
+        try:
+            users_df = pd.read_csv("data/users.csv")
+            
+            style_pref = profile.get("style_pref")
+            area = profile.get("area")
+            similar_users = users_df[
+                (users_df["area"] == area) | (users_df["style_pref"] == style_pref)
+            ]
+            friend_ids = similar_users["user_id"].head(5).tolist()
+        except Exception:
+            friend_ids = []
+    else:
+        connections  = _load_connections()
+        friend_ids   = connections.get(user_id, [])
 
     if not friend_ids:
         return {
@@ -36,7 +41,7 @@ def get_peer_purchases(user_id: str, top_n: int = 5) -> dict:
             "note": "No peer connections found.",
         }
 
-    # Peer purchase history
+    
     try:
         history   = pd.read_csv("data/purchase_history.csv")
         peer_hist = history[history["user_id"].isin(friend_ids)]
@@ -47,7 +52,7 @@ def get_peer_purchases(user_id: str, top_n: int = 5) -> dict:
         top_products   = []
         top_categories = []
 
-    # Peer style distribution
+    
     try:
         users_df   = pd.read_csv("data/users.csv")
         friends_df = users_df[users_df["user_id"].isin(friend_ids)]
