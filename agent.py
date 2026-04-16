@@ -75,7 +75,25 @@ def run_agent(profile: dict) -> dict:
 
     peer_products = ", ".join(peer_data.get("peer_products", [])[:3])
     peer_styles = ", ".join([f"{s['style']}" for s in peer_data.get("peer_styles", [])])
-    local_peer_insights = f"Your peers are buying {peer_products if peer_products else 'similar items'}. Top styles in your network: {peer_styles if peer_styles else 'Diverse'}."
+
+    # Local trend summary for the output field (area + school combined)
+    top_colors = trends.get("top_colors", [])
+    area_trend_names = [t.get("product_name", "") for t in trends.get("area_trends", [])[:2]]
+    school_trend_names = [t.get("product_name", "") for t in trends.get("school_trends", [])[:2]]
+
+    local_trend_str = ""
+    if area_trend_names:
+        local_trend_str += f"Trending in {profile['area']}: {', '.join(area_trend_names)}."
+    if top_colors:
+        local_trend_str += f" Top colors: {', '.join(top_colors)}."
+    if school_trend_names and profile.get("school"):
+        local_trend_str += f" At {profile['school']}: {', '.join(school_trend_names)} are popular."
+
+    local_peer_insights = (
+        f"{local_trend_str} "
+        f"Your peers are buying {peer_products if peer_products else 'similar items'}. "
+        f"Top styles in your network: {peer_styles if peer_styles else 'Diverse'}."
+    ).strip()
 
     top_names = [p.get('name', 'Item') for p in top_recommendations]
     recommended_products = f"We highly recommend looking into: {', '.join(top_names)}."
@@ -90,7 +108,7 @@ def run_agent(profile: dict) -> dict:
     disclaimer = "AI-generated recommendations. Prices may vary."
 
    
-    prompt = build_prompt(profile, events, top_recommendations)
+    prompt = build_prompt(profile, events, top_recommendations, trends, peer_data)
     personalized_reasoning = call_llm(prompt)
 
     

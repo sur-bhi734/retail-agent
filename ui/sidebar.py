@@ -1,5 +1,5 @@
 import streamlit as st
-from core.user_profile import AREAS, STYLES, BRANDS, SIZES, BUDGETS, COLORS, OCCASIONS
+from core.user_profile import AREAS, STYLES, BRANDS, SIZES, BUDGETS, COLORS, OCCASIONS, build_profile_from_inputs
 
 def render_sidebar(users_df):
     with st.sidebar:
@@ -43,25 +43,27 @@ def render_sidebar(users_df):
             color_pref= st.selectbox("Favourite color", COLORS)
             occasion  = st.selectbox("Main occasion", OCCASIONS)
             brand     = st.selectbox("Preferred brand", BRANDS)
-            influence = st.selectbox("Social influence", ["High", "Medium", "Low"])
-            frequency = st.selectbox("Shopping frequency", ["Weekly", "Monthly", "Rarely"])
 
-            profile = {
-                "user_id":            "CUSTOM",
-                "name":               name if name else "Shopper",
-                "age":                age,
-                "gender":             gender,
-                "area":               area,
-                "school":             school if school else f"{area} College",
-                "budget":             budget,
-                "style_pref":         style,
-                "size":               size,
-                "color_pref":         color_pref,
-                "occasion":           occasion,
-                "preferred_brands":   brand,
-                "social_influence":   influence,
-                "purchase_frequency": frequency,
+            raw_inputs = {
+                "user_id":          "CUSTOM",
+                "name":             name if name else "Shopper",
+                "age":              age,
+                "gender":           gender,
+                "area":             area,
+                "school":           school if school else f"{area} College",
+                "budget":           budget,
+                "style_pref":       style,
+                "size":             size,
+                "color_pref":       color_pref,
+                "occasion":         occasion,
+                "preferred_brands": brand,
             }
+            profile = build_profile_from_inputs(raw_inputs)
+
+            # Show the inferred fields so the user can see what was derived
+            st.markdown("---")
+            st.markdown(f"**Inferred social influence:** {profile['social_influence']}")
+            st.markdown(f"**Inferred shopping frequency:** {profile['purchase_frequency']}")
 
         st.divider()
         go = st.button("FIND YOUR STYLE", type="primary", use_container_width=True)

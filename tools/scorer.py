@@ -71,17 +71,34 @@ def get_comparisons(scored: list[dict], anchor: dict) -> list[dict]:
 
 
 def get_next_purchase_hints(already_bought_categories: list[str]) -> list[str]:
-    """Suggest 2 next categories based on past purchases."""
-    NEXT_CATEGORY_MAP = {
-        "Tops":       ["Bottoms", "Footwear"],
-        "Bottoms":    ["Tops", "Footwear"],
-        "Footwear":   ["Accessories", "Tops"],
-        "Ethnic Wear":["Accessories", "Footwear"],
-        "Accessories":["Tops", "Bottoms"],
-    }
-    
+    """
+    Suggest next categories based on frequency gaps in purchase history.
+    Finds which categories the user has bought least and surfaces those first,
+    so the plan reflects actual gaps rather than a fixed lookup table.
+    Falls back to sensible defaults when history is empty.
+    """
+    ALL_CATEGORIES = ["Tops", "Bottoms", "Footwear", "Ethnic Wear", "Accessories"]
+
     if not already_bought_categories:
         return ["Tops", "Bottoms"]
 
-    last_cat = already_bought_categories[-1]
-    return NEXT_CATEGORY_MAP.get(last_cat, ["Tops", "Accessories"])
+    # Count how many times the user has bought each category
+    from collections import Counter
+    bought_counts = Counter(already_bought_categories)
+
+    # Score each category: categories never bought score 0, bought ones score their count
+    # We want to surface the most under-represented categories
+    category_scores = {cat: bought_counts.get(cat, 0) for cat in ALL_CATEGORIES}
+
+    # Sort ascending — least purchased categories come first
+    sorted_cats = sorted(category_scores.items(), key=lambda x: x[1])
+
+    # Return the 2 least-bought categories that the user hasn't already bought most recently
+    last_bought = already_bought_categories[-1] if already_bought_categories else ""
+    hints = [cat for cat, _ in sorted_cats if cat != last_bought][:2]
+
+    # If filtering removed everything, fall back gracefully
+    if not hints:
+        hints = [cat for cat, _ in sorted_cats][:2]
+
+    return hints
