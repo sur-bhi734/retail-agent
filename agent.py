@@ -62,23 +62,48 @@ def run_agent(profile: dict) -> dict:
     top_recommendations = get_top_recommendations(scored, n=5)
     comparisons = get_comparisons(scored, scored[0]) if scored else []
     next_hints = get_next_purchase_hints(bought_categories)
-
     
-    prompt = build_prompt(
-        profile=profile,
-        trends=trends,
-        peer_data=peer_data,
-        events=events,
-        top_products=top_recommendations,
-        comparisons=comparisons,
-        already_bought=already_bought,
-        next_hints=next_hints,
-    )
-
     
-    result = call_llm(prompt)
-
+    import json
     
+    profile_summary = json.dumps({
+        "Style": profile.get("style_pref", ""),
+        "Budget": profile.get("budget", ""),
+        "Color": profile.get("color_pref", ""),
+        "Brand": profile.get("preferred_brands", "")
+    })
+
+    peer_products = ", ".join(peer_data.get("peer_products", [])[:3])
+    peer_styles = ", ".join([f"{s['style']}" for s in peer_data.get("peer_styles", [])])
+    local_peer_insights = f"Your peers are buying {peer_products if peer_products else 'similar items'}. Top styles in your network: {peer_styles if peer_styles else 'Diverse'}."
+
+    top_names = [p.get('name', 'Item') for p in top_recommendations]
+    recommended_products = f"We highly recommend looking into: {', '.join(top_names)}."
+
+    next_purchase_plan = f"Based on your profile, you might want to look into {', '.join(next_hints)} next to complete your wardrobe."
+
+    if comparisons:
+        comparative_suggestions = f"Alternatively consider {comparisons[0].get('name')} ({comparisons[0].get('brand')}) as a strong comparison."
+    else:
+        comparative_suggestions = "No direct comparisons available."
+
+    disclaimer = "AI-generated recommendations. Prices may vary."
+
+    # ── 5. LLM Call for Narrative Only ───────────────────────────────────────
+    prompt = build_prompt(profile, events, top_recommendations)
+    personalized_reasoning = call_llm(prompt)
+
+    # ── 6. Attach structured data ──────────────────────────────────────────
+    result = {
+        "profile_summary": profile_summary,
+        "local_peer_insights": local_peer_insights,
+        "recommended_products": recommended_products,
+        "personalized_reasoning": personalized_reasoning,
+        "next_purchase_plan": next_purchase_plan,
+        "comparative_suggestions": comparative_suggestions,
+        "disclaimer": disclaimer,
+    }
+
     result["_structured"] = {
         "top_products": top_recommendations,
         "comparisons": comparisons,

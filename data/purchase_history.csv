@@ -1,118 +1,121 @@
 user_id,product_id,product_name,category,price,date_purchased
-U001,P032,HRX White Ethnic Wear,Ethnic Wear,274,2026-04-12
-U001,P038,HRX Navy Ethnic Wear,Ethnic Wear,362,2026-04-12
-U001,P010,Campus Maroon Top,Tops,221,2026-04-12
-U001,P015,Van Heusen Navy Bottom,Bottoms,289,2026-04-12
-U002,P041,Roadster Mustard Accessorie,Accessories,4635,2026-04-12
-U002,P017,Van Heusen Beige Bottom,Bottoms,727,2026-04-12
-U002,P030,Biba Pastel Footwear,Footwear,274,2026-04-12
-U002,P049,Puma Olive Accessorie,Accessories,219,2026-04-12
-U002,P043,Campus Mustard Accessorie,Accessories,338,2026-04-12
-U002,P001,Puma White Top,Tops,1191,2026-04-12
-U003,P019,Roadster Mustard Bottom,Bottoms,4127,2026-04-12
-U003,P044,Biba Blue Accessorie,Accessories,283,2026-04-12
-U003,P035,Biba Navy Ethnic Wear,Ethnic Wear,1350,2026-04-12
-U003,P011,Roadster Black Bottom,Bottoms,3251,2026-04-12
-U003,P005,W White Top,Tops,771,2026-04-12
-U003,P029,Van Heusen Maroon Footwear,Footwear,370,2026-04-12
-U004,P038,HRX Navy Ethnic Wear,Ethnic Wear,362,2026-04-12
-U004,P020,Puma Black Bottom,Bottoms,682,2026-04-12
-U004,P041,Roadster Mustard Accessorie,Accessories,4635,2026-04-12
-U004,P028,W Navy Footwear,Footwear,4751,2026-04-12
-U004,P045,Van Heusen Mustard Accessorie,Accessories,487,2026-04-12
-U005,P030,Biba Pastel Footwear,Footwear,274,2026-04-12
-U005,P020,Puma Black Bottom,Bottoms,682,2026-04-12
-U005,P013,Campus Beige Bottom,Bottoms,220,2026-04-12
-U005,P025,Puma Mustard Footwear,Footwear,630,2026-04-12
-U005,P031,Biba Mustard Ethnic Wear,Ethnic Wear,4442,2026-04-12
-U006,P016,Van Heusen White Bottom,Bottoms,2152,2026-04-12
-U006,P025,Puma Mustard Footwear,Footwear,630,2026-04-12
-U006,P037,W Maroon Ethnic Wear,Ethnic Wear,1817,2026-04-12
-U007,P037,W Maroon Ethnic Wear,Ethnic Wear,1817,2026-04-12
-U007,P019,Roadster Mustard Bottom,Bottoms,4127,2026-04-12
-U007,P045,Van Heusen Mustard Accessorie,Accessories,487,2026-04-12
-U007,P002,W Blue Top,Tops,1134,2026-04-12
-U007,P043,Campus Mustard Accessorie,Accessories,338,2026-04-12
-U008,P018,W Mustard Bottom,Bottoms,313,2026-04-12
-U008,P001,Puma White Top,Tops,1191,2026-04-12
-U008,P037,W Maroon Ethnic Wear,Ethnic Wear,1817,2026-04-12
-U008,P044,Biba Blue Accessorie,Accessories,283,2026-04-12
-U008,P004,Puma White Top,Tops,3377,2026-04-12
-U008,P039,W Mustard Ethnic Wear,Ethnic Wear,277,2026-04-12
-U009,P019,Roadster Mustard Bottom,Bottoms,4127,2026-04-12
-U009,P015,Van Heusen Navy Bottom,Bottoms,289,2026-04-12
-U009,P039,W Mustard Ethnic Wear,Ethnic Wear,277,2026-04-12
-U009,P023,Campus Beige Footwear,Footwear,299,2026-04-12
-U009,P049,Puma Olive Accessorie,Accessories,219,2026-04-12
-U009,P041,Roadster Mustard Accessorie,Accessories,4635,2026-04-12
-U010,P040,Van Heusen Mustard Ethnic Wear,Ethnic Wear,437,2026-04-12
-U010,P017,Van Heusen Beige Bottom,Bottoms,727,2026-04-12
-U010,P044,Biba Blue Accessorie,Accessories,283,2026-04-12
-U010,P049,Puma Olive Accessorie,Accessories,219,2026-04-12
-U011,P041,Roadster Mustard Accessorie,Accessories,4635,2026-04-12
-U011,P007,Roadster Navy Top,Tops,352,2026-04-12
-U011,P042,Biba Blue Accessorie,Accessories,1271,2026-04-12
-U011,P003,Biba Navy Top,Tops,744,2026-04-12
-U012,P029,Van Heusen Maroon Footwear,Footwear,370,2026-04-12
-U012,P003,Biba Navy Top,Tops,744,2026-04-12
-U012,P038,HRX Navy Ethnic Wear,Ethnic Wear,362,2026-04-12
-U012,P024,Biba Mustard Footwear,Footwear,2766,2026-04-12
-U012,P047,Van Heusen Mustard Accessorie,Accessories,1279,2026-04-12
-U013,P006,Campus Maroon Top,Tops,4915,2026-04-12
-U013,P019,Roadster Mustard Bottom,Bottoms,4127,2026-04-12
-U013,P021,Biba Mustard Footwear,Footwear,1246,2026-04-12
-U013,P048,HRX Black Accessorie,Accessories,4568,2026-04-12
-U014,P012,Biba Blue Bottom,Bottoms,536,2026-04-12
-U014,P013,Campus Beige Bottom,Bottoms,220,2026-04-12
-U014,P009,Van Heusen White Top,Tops,457,2026-04-12
-U014,P035,Biba Navy Ethnic Wear,Ethnic Wear,1350,2026-04-12
-U014,P024,Biba Mustard Footwear,Footwear,2766,2026-04-12
-U014,P034,Puma Beige Ethnic Wear,Ethnic Wear,3675,2026-04-12
-U015,P011,Roadster Black Bottom,Bottoms,3251,2026-04-12
-U015,P017,Van Heusen Beige Bottom,Bottoms,727,2026-04-12
-U015,P031,Biba Mustard Ethnic Wear,Ethnic Wear,4442,2026-04-12
-U015,P019,Roadster Mustard Bottom,Bottoms,4127,2026-04-12
-U015,P048,HRX Black Accessorie,Accessories,4568,2026-04-12
-U016,P008,HRX Olive Top,Tops,659,2026-04-12
-U016,P030,Biba Pastel Footwear,Footwear,274,2026-04-12
-U016,P005,W White Top,Tops,771,2026-04-12
-U016,P010,Campus Maroon Top,Tops,221,2026-04-12
-U016,P049,Puma Olive Accessorie,Accessories,219,2026-04-12
-U017,P044,Biba Blue Accessorie,Accessories,283,2026-04-12
-U017,P047,Van Heusen Mustard Accessorie,Accessories,1279,2026-04-12
-U017,P026,HRX Maroon Footwear,Footwear,353,2026-04-12
-U017,P036,Campus Blue Ethnic Wear,Ethnic Wear,1360,2026-04-12
-U018,P006,Campus Maroon Top,Tops,4915,2026-04-12
-U018,P026,HRX Maroon Footwear,Footwear,353,2026-04-12
-U018,P001,Puma White Top,Tops,1191,2026-04-12
-U018,P017,Van Heusen Beige Bottom,Bottoms,727,2026-04-12
-U018,P035,Biba Navy Ethnic Wear,Ethnic Wear,1350,2026-04-12
-U019,P030,Biba Pastel Footwear,Footwear,274,2026-04-12
-U019,P024,Biba Mustard Footwear,Footwear,2766,2026-04-12
-U019,P044,Biba Blue Accessorie,Accessories,283,2026-04-12
-U020,P038,HRX Navy Ethnic Wear,Ethnic Wear,362,2026-04-12
-U020,P025,Puma Mustard Footwear,Footwear,630,2026-04-12
-U020,P041,Roadster Mustard Accessorie,Accessories,4635,2026-04-12
-U020,P024,Biba Mustard Footwear,Footwear,2766,2026-04-12
-U020,P007,Roadster Navy Top,Tops,352,2026-04-12
-U021,P031,Biba Mustard Ethnic Wear,Ethnic Wear,4442,2026-04-12
-U021,P002,W Blue Top,Tops,1134,2026-04-12
-U021,P040,Van Heusen Mustard Ethnic Wear,Ethnic Wear,437,2026-04-12
-U021,P036,Campus Blue Ethnic Wear,Ethnic Wear,1360,2026-04-12
-U022,P040,Van Heusen Mustard Ethnic Wear,Ethnic Wear,437,2026-04-12
-U022,P015,Van Heusen Navy Bottom,Bottoms,289,2026-04-12
-U022,P042,Biba Blue Accessorie,Accessories,1271,2026-04-12
-U022,P005,W White Top,Tops,771,2026-04-12
-U022,P041,Roadster Mustard Accessorie,Accessories,4635,2026-04-12
-U023,P045,Van Heusen Mustard Accessorie,Accessories,487,2026-04-12
-U023,P020,Puma Black Bottom,Bottoms,682,2026-04-12
-U023,P042,Biba Blue Accessorie,Accessories,1271,2026-04-12
-U023,P027,Biba Pastel Footwear,Footwear,1121,2026-04-12
-U023,P008,HRX Olive Top,Tops,659,2026-04-12
-U023,P009,Van Heusen White Top,Tops,457,2026-04-12
-U024,P003,Biba Navy Top,Tops,744,2026-04-12
-U024,P020,Puma Black Bottom,Bottoms,682,2026-04-12
-U024,P032,HRX White Ethnic Wear,Ethnic Wear,274,2026-04-12
-U025,P007,Roadster Navy Top,Tops,352,2026-04-12
-U025,P016,Van Heusen White Bottom,Bottoms,2152,2026-04-12
-U025,P035,Biba Navy Ethnic Wear,Ethnic Wear,1350,2026-04-12
+U001,P133,Biba Classic Black Footwear,Footwear,346,2026-04-15
+U001,P215,Puma Signature Black Ethnic Wear,Ethnic Wear,1044,2026-04-15
+U001,P208,Puma Urban Mustard Ethnic Wear,Ethnic Wear,829,2026-04-15
+U001,P199,HRX Classic Pastel Ethnic Wear,Ethnic Wear,233,2026-04-15
+U001,P019,Biba Modern Maroon Top,Tops,1353,2026-04-15
+U002,P176,Roadster Exclusive Maroon Footwear,Footwear,3795,2026-04-15
+U002,P114,Van Heusen Exclusive White Bottom,Bottoms,2126,2026-04-15
+U002,P274,Campus Signature White Accessorie,Accessories,1049,2026-04-15
+U002,P244,Van Heusen Exclusive White Accessorie,Accessories,4581,2026-04-15
+U003,P260,Van Heusen Premium Maroon Accessorie,Accessories,1344,2026-04-15
+U003,P154,W Essential Blue Footwear,Footwear,456,2026-04-15
+U003,P088,W Modern Black Bottom,Bottoms,1057,2026-04-15
+U003,P286,Biba Designer Mustard Accessorie,Accessories,2448,2026-04-15
+U003,P093,Van Heusen Basic Pastel Bottom,Bottoms,468,2026-04-15
+U004,P050,Biba Modern Olive Top,Tops,1071,2026-04-15
+U004,P242,Biba Classic Beige Accessorie,Accessories,463,2026-04-15
+U004,P066,Van Heusen Classic Maroon Bottom,Bottoms,458,2026-04-15
+U004,P133,Biba Classic Black Footwear,Footwear,346,2026-04-15
+U004,P287,HRX Everyday Mustard Accessorie,Accessories,237,2026-04-15
+U005,P172,Biba Classic Olive Footwear,Footwear,215,2026-04-15
+U005,P046,HRX Premium Olive Top,Tops,1352,2026-04-15
+U005,P114,Van Heusen Exclusive White Bottom,Bottoms,2126,2026-04-15
+U005,P182,W Urban Black Ethnic Wear,Ethnic Wear,690,2026-04-15
+U006,P158,Van Heusen Modern Pastel Footwear,Footwear,796,2026-04-15
+U006,P216,HRX Exclusive Navy Ethnic Wear,Ethnic Wear,1894,2026-04-15
+U006,P170,Puma Exclusive White Footwear,Footwear,2856,2026-04-15
+U006,P191,HRX Elite Olive Ethnic Wear,Ethnic Wear,3743,2026-04-15
+U007,P300,HRX Exclusive Beige Accessorie,Accessories,3432,2026-04-15
+U007,P151,Biba Essential Beige Footwear,Footwear,320,2026-04-15
+U007,P238,Biba Classic Blue Ethnic Wear,Ethnic Wear,204,2026-04-15
+U007,P061,Van Heusen Elite Pastel Bottom,Bottoms,2981,2026-04-15
+U007,P241,Van Heusen Basic White Accessorie,Accessories,362,2026-04-15
+U008,P299,Roadster Signature Maroon Accessorie,Accessories,1014,2026-04-15
+U008,P298,Van Heusen Exclusive Black Accessorie,Accessories,4083,2026-04-15
+U008,P037,Roadster Signature White Top,Tops,938,2026-04-15
+U009,P100,W Luxury Mustard Bottom,Bottoms,2948,2026-04-15
+U009,P257,Van Heusen Exclusive Beige Accessorie,Accessories,2099,2026-04-15
+U009,P062,Campus Premium White Bottom,Bottoms,948,2026-04-15
+U009,P196,Puma Premium White Ethnic Wear,Ethnic Wear,636,2026-04-15
+U009,P272,Roadster Classic Maroon Accessorie,Accessories,207,2026-04-15
+U009,P153,HRX Designer Blue Footwear,Footwear,3408,2026-04-15
+U010,P028,Roadster Everyday Mustard Top,Tops,498,2026-04-15
+U010,P078,Van Heusen Elite Black Bottom,Bottoms,1533,2026-04-15
+U010,P071,Campus Elite Mustard Bottom,Bottoms,4262,2026-04-15
+U010,P103,Van Heusen Signature Black Bottom,Bottoms,1443,2026-04-15
+U010,P176,Roadster Exclusive Maroon Footwear,Footwear,3795,2026-04-15
+U010,P210,W Classic Navy Ethnic Wear,Ethnic Wear,410,2026-04-15
+U011,P074,Roadster Classic Navy Bottom,Bottoms,488,2026-04-15
+U011,P162,Van Heusen Designer Beige Footwear,Footwear,3866,2026-04-15
+U011,P093,Van Heusen Basic Pastel Bottom,Bottoms,468,2026-04-15
+U011,P042,Campus Modern Blue Top,Tops,1237,2026-04-15
+U011,P250,Biba Premium Mustard Accessorie,Accessories,1017,2026-04-15
+U011,P171,HRX Elite Black Footwear,Footwear,2432,2026-04-15
+U012,P161,Biba Classic Black Footwear,Footwear,429,2026-04-15
+U012,P030,Van Heusen Designer Mustard Top,Tops,4239,2026-04-15
+U012,P003,Van Heusen Modern Pastel Top,Tops,1187,2026-04-15
+U012,P232,W Exclusive Olive Ethnic Wear,Ethnic Wear,2813,2026-04-15
+U013,P108,W Basic Maroon Bottom,Bottoms,303,2026-04-15
+U013,P087,Biba Essential Beige Bottom,Bottoms,407,2026-04-15
+U013,P296,HRX Urban Maroon Accessorie,Accessories,1430,2026-04-15
+U013,P082,Van Heusen Urban White Bottom,Bottoms,1323,2026-04-15
+U013,P251,W Everyday Maroon Accessorie,Accessories,488,2026-04-15
+U014,P067,Biba Premium Blue Bottom,Bottoms,995,2026-04-15
+U014,P223,HRX Modern Pastel Ethnic Wear,Ethnic Wear,530,2026-04-15
+U014,P220,Van Heusen Elite Black Ethnic Wear,Ethnic Wear,2648,2026-04-15
+U015,P220,Van Heusen Elite Black Ethnic Wear,Ethnic Wear,2648,2026-04-15
+U015,P245,Puma Signature Pastel Accessorie,Accessories,968,2026-04-15
+U015,P197,Puma Designer Blue Ethnic Wear,Ethnic Wear,3396,2026-04-15
+U015,P003,Van Heusen Modern Pastel Top,Tops,1187,2026-04-15
+U015,P020,Campus Luxury Pastel Top,Tops,2375,2026-04-15
+U015,P274,Campus Signature White Accessorie,Accessories,1049,2026-04-15
+U016,P192,Biba Luxury Pastel Ethnic Wear,Ethnic Wear,1872,2026-04-15
+U016,P008,Campus Luxury Maroon Top,Tops,2035,2026-04-15
+U016,P165,Biba Urban Beige Footwear,Footwear,1244,2026-04-15
+U016,P272,Roadster Classic Maroon Accessorie,Accessories,207,2026-04-15
+U017,P010,Campus Basic Beige Top,Tops,220,2026-04-15
+U017,P003,Van Heusen Modern Pastel Top,Tops,1187,2026-04-15
+U017,P128,W Designer White Footwear,Footwear,3020,2026-04-15
+U017,P116,Roadster Signature Pastel Bottom,Bottoms,575,2026-04-15
+U018,P160,W Classic Beige Footwear,Footwear,375,2026-04-15
+U018,P067,Biba Premium Blue Bottom,Bottoms,995,2026-04-15
+U018,P053,Campus Premium Pastel Top,Tops,795,2026-04-15
+U018,P197,Puma Designer Blue Ethnic Wear,Ethnic Wear,3396,2026-04-15
+U018,P258,Puma Everyday White Accessorie,Accessories,411,2026-04-15
+U019,P086,Puma Designer Blue Bottom,Bottoms,3019,2026-04-15
+U019,P034,HRX Basic Navy Top,Tops,325,2026-04-15
+U019,P024,Van Heusen Elite Blue Top,Tops,3403,2026-04-15
+U019,P153,HRX Designer Blue Footwear,Footwear,3408,2026-04-15
+U019,P149,Roadster Signature Navy Footwear,Footwear,1373,2026-04-15
+U020,P267,Biba Luxury Olive Accessorie,Accessories,2938,2026-04-15
+U020,P269,Van Heusen Designer Maroon Accessorie,Accessories,3766,2026-04-15
+U020,P173,Campus Designer Pastel Footwear,Footwear,3555,2026-04-15
+U020,P223,HRX Modern Pastel Ethnic Wear,Ethnic Wear,530,2026-04-15
+U020,P069,Van Heusen Classic Blue Bottom,Bottoms,452,2026-04-15
+U020,P176,Roadster Exclusive Maroon Footwear,Footwear,3795,2026-04-15
+U021,P184,Campus Exclusive Pastel Ethnic Wear,Ethnic Wear,2165,2026-04-15
+U021,P097,Biba Essential Blue Bottom,Bottoms,249,2026-04-15
+U021,P085,Biba Basic Black Bottom,Bottoms,408,2026-04-15
+U021,P207,HRX Elite White Ethnic Wear,Ethnic Wear,2278,2026-04-15
+U021,P010,Campus Basic Beige Top,Tops,220,2026-04-15
+U021,P117,Biba Designer Blue Bottom,Bottoms,3395,2026-04-15
+U022,P068,Campus Modern Black Bottom,Bottoms,1376,2026-04-15
+U022,P109,Roadster Luxury Olive Bottom,Bottoms,3057,2026-04-15
+U022,P012,Van Heusen Elite White Top,Tops,4725,2026-04-15
+U022,P259,Campus Elite White Accessorie,Accessories,1510,2026-04-15
+U023,P064,Biba Premium Blue Bottom,Bottoms,1455,2026-04-15
+U023,P188,Campus Urban Blue Ethnic Wear,Ethnic Wear,814,2026-04-15
+U023,P020,Campus Luxury Pastel Top,Tops,2375,2026-04-15
+U023,P193,W Signature Black Ethnic Wear,Ethnic Wear,973,2026-04-15
+U024,P274,Campus Signature White Accessorie,Accessories,1049,2026-04-15
+U024,P025,Campus Everyday Maroon Top,Tops,442,2026-04-15
+U024,P056,Biba Signature White Top,Tops,1052,2026-04-15
+U024,P011,Roadster Everyday Navy Top,Tops,278,2026-04-15
+U024,P060,Campus Classic Mustard Top,Tops,360,2026-04-15
+U025,P228,Puma Essential Blue Ethnic Wear,Ethnic Wear,348,2026-04-15
+U025,P195,Biba Luxury Mustard Ethnic Wear,Ethnic Wear,2054,2026-04-15
+U025,P064,Biba Premium Blue Bottom,Bottoms,1455,2026-04-15
+U025,P281,HRX Basic Blue Accessorie,Accessories,238,2026-04-15
+U025,P130,Roadster Signature Olive Footwear,Footwear,905,2026-04-15
+U025,P243,Puma Elite Olive Accessorie,Accessories,1619,2026-04-15

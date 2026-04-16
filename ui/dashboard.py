@@ -4,13 +4,37 @@ import plotly.express as px
 import os
 import base64
 
+import random
+
 CATEGORY_IMAGE_MAP = {
-    "tops": "https://img105.savana.com/goods-pic/219ee7bc5c4a4df9b51d65d8a436c245_w540_h720_q85.webp",
-    "bottoms": "https://assets.myntassets.com/w_200,q_50,,dpr_3,fl_progressive,f_webp/assets/images/2025/DECEMBER/5/5PRuNmTV_81289dcc65434608bad49d38f5230906.jpg",
-    "footwear": "https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2026/MARCH/7/Tpu96GgH_0478750fcc354af18f0a87a338849dc2.jpg",
-    "accessories": "https://images.pexels.com/photos/2986445/pexels-photo-2986445.jpeg?cs=srgb&dl=pexels-harper-sunday-2986445.jpg&fm=jpg",
-    "ethnic wear": "https://i.pinimg.com/474x/08/2a/62/082a622cb06e8dcfd11e6865fc3fadfb.jpg",
-    "default": "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=400&q=80"
+    "tops": [
+        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=400&q=80"
+    ],
+    "bottoms": [
+        "https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1560243563-062bfc001d68?auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1584865288642-42078afe6942?auto=format&fit=crop&w=400&q=80"
+    ],
+    "footwear": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=400&q=80"
+    ],
+    "accessories": [
+        "https://images.unsplash.com/photo-1512163143273-bde0e3cc7407?auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&w=400&q=80"
+    ],
+    "ethnic wear": [
+        "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1583391733958-d25e07fac044?auto=format&fit=crop&w=400&q=80",
+        "https://images.unsplash.com/photo-1605763240000-7e93b172d754?auto=format&fit=crop&w=400&q=80"
+    ],
+    "default": [
+        "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=400&q=80"
+    ]
 }
 
 def get_image_src(img_val: str, fallback_url: str) -> str:
@@ -43,7 +67,7 @@ def render_dashboard(profile: dict, result: dict):
     k3.metric("Peer Connections", structured.get("peer_data", {}).get("friend_count", 0))
     k4.metric("Upcoming Events", len(structured.get("events", [])))
 
-    if elapsed > 5:
+    if elapsed > 60:
         st.warning(f"Engine processed in {elapsed}s — model is running slow.")
     else:
         st.success(f"Generated securely in {elapsed}s")
@@ -133,7 +157,8 @@ def render_dashboard(profile: dict, result: dict):
                 budget_badge = {"Low": "Budget", "Mid": "Standard", "High": "Premium"}.get(
                     p.get("budget_tier", ""), ""
                 )
-                cat_img = CATEGORY_IMAGE_MAP.get(p.get("category", "").lower(), CATEGORY_IMAGE_MAP["default"])
+                cat_imgs = CATEGORY_IMAGE_MAP.get(p.get("category", "").lower(), CATEGORY_IMAGE_MAP["default"])
+                cat_img = random.choice(cat_imgs)
                 final_img = get_image_src(p.get("image_url", ""), cat_img)
                     
                 st.markdown(f"""
@@ -159,7 +184,8 @@ def render_dashboard(profile: dict, result: dict):
                     budget_badge = {"Low": "Budget", "Mid": "Standard", "High": "Premium"}.get(
                         p.get("budget_tier", ""), ""
                     )
-                    cat_img = CATEGORY_IMAGE_MAP.get(p.get("category", "").lower(), CATEGORY_IMAGE_MAP["default"])
+                    cat_imgs = CATEGORY_IMAGE_MAP.get(p.get("category", "").lower(), CATEGORY_IMAGE_MAP["default"])
+                    cat_img = random.choice(cat_imgs)
                     final_img = get_image_src(p.get("image_url", ""), cat_img)
                         
                     st.markdown(f"""
