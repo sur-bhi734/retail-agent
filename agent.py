@@ -89,11 +89,11 @@ def run_agent(profile: dict) -> dict:
 
     disclaimer = "AI-generated recommendations. Prices may vary."
 
-    # ── 5. LLM Call for Narrative Only ───────────────────────────────────────
+   
     prompt = build_prompt(profile, events, top_recommendations)
     personalized_reasoning = call_llm(prompt)
 
-    # ── 6. Attach structured data ──────────────────────────────────────────
+    
     result = {
         "profile_summary": profile_summary,
         "local_peer_insights": local_peer_insights,
